@@ -1,0 +1,33 @@
+{
+	"name": "wp-cmsapichat/wp-cmsapichat",
+	"description": "Adds support for the site through the cmsapichat.pl tool",
+	"version": "1.1.0",
+	"type": "wordpress-plugin",
+	"keywords": [
+		"wordpress",
+		"seo"
+	],
+	"authors": [
+        {
+            "name": "Mariusz Wysokiński",
+            "email": "kontakt@intelekt.net.pl",
+            "homepage": "https://github.com/N1ebieski",
+            "role": "Developer"
+        }
+	],
+	"require": {
+		"yahnis-elsts/plugin-update-checker": "^5.5"
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"autoload": {
+		"psr-4": {
+			"WPCmsapichat\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"WPCmsapichat\\Tests\\": "tests/"
+		}
+	}
+}
