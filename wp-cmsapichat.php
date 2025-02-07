@@ -21,6 +21,7 @@ if (file_exists(__DIR__ . '/vendor/autoload.php')) {
 }
 
 // Auto updates
+
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 $myUpdateChecker = PucFactory::buildUpdateChecker(
