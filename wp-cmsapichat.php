@@ -10,11 +10,19 @@
  */
 
 // To prevent calling the plugin directly
+
 if ( ! function_exists( 'add_action' ) ) {
 	header( 'Status: 403 Forbidden' );
 	header( 'HTTP/1.1 403 Forbidden' );
 	exit();
 }
+
+// Configuration
+
+define('WP_CMSAPICHAT_PUC_REPO', 'https://github.com/N1ebieski/wp-cmsapichat');
+define('WP_CMSAPICHAT_PUC_BRANCH', 'production');
+
+// Autoloader
 
 if (file_exists(__DIR__ . '/vendor/autoload.php')) {
     require_once __DIR__ . '/vendor/autoload.php';
@@ -25,12 +33,14 @@ if (file_exists(__DIR__ . '/vendor/autoload.php')) {
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 $myUpdateChecker = PucFactory::buildUpdateChecker(
-	'https://github.com/N1ebieski/wp-cmsapichat',
+    WP_CMSAPICHAT_PUC_REPO,
 	__FILE__,
 	'wp-cmsapichat'
 );
 
-$myUpdateChecker->setBranch('production');
+$myUpdateChecker->setBranch(WP_CMSAPICHAT_PUC_BRANCH);
+
+// API
 
 add_action('rest_api_init', function () {
     register_rest_route('meta/v1', '/plugins', [
