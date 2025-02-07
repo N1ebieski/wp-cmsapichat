@@ -4,7 +4,7 @@
  * Author: Mariusz Wysokiński
  * Author URI: https://intelekt.net.pl
  * Description: Adds support for the site through the cmsapichat.pl tool
- * Version: 1.1
+ * Version: 1.2
  * 
  * @wordpress-plugin
  */
@@ -25,7 +25,7 @@ if (file_exists(__DIR__ . '/vendor/autoload.php')) {
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 $myUpdateChecker = PucFactory::buildUpdateChecker(
-	'https://github.com/N1ebieski/wp-cmsapichat.git',
+	'https://github.com/N1ebieski/wp-cmsapichat',
 	__FILE__,
 	'wp-cmsapichat'
 );
