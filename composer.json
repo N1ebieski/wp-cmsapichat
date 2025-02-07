@@ -1,7 +1,7 @@
 {
 	"name": "wp-cmsapichat/wp-cmsapichat",
 	"description": "Adds support for the site through the cmsapichat.pl tool",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"type": "wordpress-plugin",
 	"keywords": [
 		"wordpress",
