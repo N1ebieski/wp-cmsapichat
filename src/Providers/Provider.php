@@ -12,5 +12,5 @@ if (!defined('ABSPATH')) {
 
 abstract class Provider
 {
-    abstract public function register(): void;
+    abstract public function boot(): void;
 }

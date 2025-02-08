@@ -15,7 +15,7 @@ use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 final class PucProvider extends Provider
 {
-    public function register(): void
+    public function boot(): void
     {
         $myUpdateChecker = PucFactory::buildUpdateChecker(
             WP_CMSAPICHAT_PUC_REPO,

@@ -27,7 +27,7 @@ final class ProviderComposite
     public function process(): void
     {
         foreach ($this->handlers as $handler) {
-            $handler->register();
+            $handler->boot();
         }
     }
 }

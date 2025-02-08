@@ -17,7 +17,7 @@ use WPCmsapichat\Providers\Provider;
 
 final class ApiProvider extends Provider
 {
-    public function register(): void
+    public function boot(): void
     {
         add_action('rest_api_init', [new RegisterIndexRouteAction(), 'handle']);
 
