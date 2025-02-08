@@ -15,19 +15,19 @@ final class ProviderComposite
     /**
      * @var array<Provider>
      */
-    private array $handlers = [];
+    private array $providers = [];
 
-    public function through(Provider ...$handlers): self
+    public function through(Provider ...$providers): self
     {
-        $this->handlers = $handlers;
+        $this->providers = $providers;
 
         return $this;
     }
 
     public function process(): void
     {
-        foreach ($this->handlers as $handler) {
-            $handler->boot();
+        foreach ($this->providers as $provider) {
+            $provider->boot();
         }
     }
 }
