@@ -1,0 +1,27 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Listen for XDebug",
+            "type": "php",
+            "request": "launch",
+            "ignore": [
+                "**/vendor/**/*.php"
+            ],
+            "hostname": "127.0.0.1",
+            "port": 49153,
+            "pathMappings": {
+                "/var/www/wordpress.cmsapichat.pl.test/packages/wp-cmsapichat": "${workspaceFolder}"
+            },
+            "xdebugSettings": {
+                "max_children": 200,
+                "max_data": 512,
+                "max_depth": 4,
+                "show_hidden": 1
+            },             
+        },
+    ]
+}

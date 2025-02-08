@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "wp-cmsapichat",
+			"path": ".."
+		},
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"intelephense.environment.phpVersion": "7.4",
+		"phpstan.suppressWorkspaceMessage": true,
+		"phpsab.executablePathCBF": "/var/www/wordpress.cmsapichat.pl.test/vendor/bin/phpcbf",
+		"phpsab.executablePathCS": "/var/www/wordpress.cmsapichat.pl.test/vendor/bin/phpcs",		
+	}
+}
