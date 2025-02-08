@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name: WP CMSapichat
+ * Plugin Name: WP Cmsapichat
  * Author: Mariusz Wysokiński
  * Author URI: https://intelekt.net.pl
  * Description: Adds support for the site through the cmsapichat.pl tool
